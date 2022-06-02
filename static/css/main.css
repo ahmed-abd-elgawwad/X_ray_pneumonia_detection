@@ -1,0 +1,50 @@
+
+body {
+  background-color: #00536b;
+  color:#fff;
+  background: url("/static/smoke1.jpg") no-repeat center center fixed;
+  padding:0;
+  margin:0
+}
+h1{
+  color:#ffffff ;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgb(131, 140, 136);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 5em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 900 right;
+  background-color: rgba(102, 167, 184, 0.8);
+  width:100%;
+  padding:10px;
+  border-bottom: 2px solid #fff;
+  
+}
+div.back{
+  margin-top: 20px;
+  background-color: rgba(72, 201, 176, 0.8);
+  padding:10px
+}
+div.back .in{
+  margin:10px;
+  background-color: #fff;
+  width:80%
+}
+.predict{
+  color:#fff;
+  background-color:rgba(102, 167, 184, 0.8) ;
+  padding:30px
+}
+.predict p{
+  font-size: 17px;
+}
+.predict p.f{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom:2;
+}
+.img{
+max-width: 300px;
+max-height: 300px;
+}
