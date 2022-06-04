@@ -1,9 +1,17 @@
-## X_ray_pneumonia_detection
+## X_ray Pneumonia Classification
 ![classification](https://i.imgur.com/jZqpV51.png)
-- flask application that takes your x_ray images and predict weather you have pneumonia [baterial or viral ] or not[ normal ]
-### Model description 
-- using `Transfer learning` we trained a pretrained model `Xception model` on our images changing the last few layers for the case of this problem 
-- classification with `three classes` [ bacterial pneumonia , viral pneumonia , normal person ]
-###Model performance 
-- the model showed nearly `100%` accuracy on the `Test images` 
-- all what i did about the model is in the file `model_building_and_training` you can check it.
+ * Using open source image dataset from kaggle [DataSet_link](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) the data is classified into two main classes
+    * Normal 
+    * Pneumonia
+ * Extract the Pneumonia classes `Viral/Bacterial` we made the data of **Three classes**
+    * Normal 
+    * Viral pneumonia
+    * Bacterial pneumonia 
+ * Using the **Transfer learning** aproach , we used **Xception Model** with the pre_trained weights of the **Imagenet** and allow only the last few layers to be trained
+ ---
+### Model Performance:
+* the model trained over nearlly 40 epochs and reached `100%` accuracy on the both **Test/Train/Val Sets** which is somthing wierd 😂.
+---
+### Model deployment :
+* The deployment is done using **Flask** with simple UI that take the image and predict the class.
+
